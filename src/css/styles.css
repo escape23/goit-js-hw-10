@@ -1,0 +1,79 @@
+body{
+    background-color: darksalmon;
+}
+
+.is-hidden {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.breed-select {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    width: 250px;
+    color: #fafafa;
+    background-color: #0c4187;
+}
+
+.ss-content .ss-list .ss-option {
+    color: #fafafa;
+}
+
+.ss-content .ss-list .ss-option:hover,
+.ss-content .ss-list .ss-option:focus,
+.ss-content .ss-list .ss-option.ss-highlighted,
+.ss-content .ss-list .ss-option:not(.ss-disabled).ss-selected {
+    color: #202020;
+    background-color: #fafafa;
+}
+
+.cat-info {
+    margin: 75px 100px;
+    padding: 30px;
+    border: 2px solid #fafafa;
+    max-width: 400px;
+    background-color: #7c3333a2;
+    color: #fafafa;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.cat-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.cat-description span,
+.cat-temperament span {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.loader {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
